@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="./scss/fonts.css">
+  <link rel="stylesheet" href="style.css" />
+ 
+  <title>momentum</title>
+</head>
+<body>
+ 
+  <header class="header">
+    <div class="player">
+      <div class="player-controls-header">
+        <div class="player-controls">
+          <button class="play-prev player-icon"></button>
+          <button class="play player-icon"></button>
+          <button class="play-next player-icon"></button>
+        </div>
+       
+        <div class="songProgress">
+          <div class="songName"><span>Dion Town</span></div>
+          <input type="range" class="progress" value="0" min="0" max="100" step="1">
+        </div>
+        <div class="duration">
+          <div class="current">0:00</div>
+          <div class="divider">&nbsp;/&nbsp;</div>
+          <div class="length">0:00</div>
+        </div>
+        <div class="volume">
+          <div class="volume-button"></div> 
+          <input type="range" class="volume-progress" value="100" min="0" max="100" step="1">
+         
+        </div>
+
+      </div>
+      <ul class="play-list">
+        <li class="play-item">
+          <span class="play-item-button"></span>Dion Town
+        </li>
+        <li class="play-item">
+          <span class="play-item-button"></span>Gludio Town
+        </li>
+        <li class="play-item">
+          <span class="play-item-button"></span>Hunters Village
+        </li>
+        <li class="play-item">
+          <span class="play-item-button"></span>Talking Island
+        </li>
+      </ul>
+    </div>
+    <div class="weather">
+      <input type="text" placeholder="" value="" class="city" />
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+      <span class="temperature"></span>
+      <span class="weather-description"></span>
+      </div>
+      <div class="wind-speed"></div>
+      <div class="humidity"></div>
+     
+      
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name" placeholder=""/>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="settings"></div>
+    <div class="settings-popup">
+      <div class="settings-list">
+        <div class="general-list">General</div>
+        <div class="images-list">Images</div>
+       
+       
+        <div class="user-list">
+          <div class="user-img"></div>
+          <div class="user-name">User</div>
+        </div>
+      </div>
+      <div class="settings-general">
+        <div class="general">
+          <div class="general-title">General</div>
+          <div class="general-decription">Customize your dashbord</div>
+
+          <div class="general-language">Languages</div>
+              <div class="general-hide bordered">
+              <p class="desctiption-language">Language</p> 
+            
+              <div class="language-checkbox">
+                <input id="language" class="checkbox radio" type="checkbox"  name="languagess">
+                <label for="language">
+                  <div class="status-switch-language"
+                    data-unchecked="EN"
+                    data-checked="RU">
+                  </div>
+                </label>
+              </div>
+            
+            
+          </div>
+
+          <div class="general-show">hide element</div>
+          <div class="general-hide">
+            <p class="description-time">Time</p> 
+            <div class="custom-checkbox">
+              <input id="status-time" class="checkbox" type="checkbox"  name="status-time">
+              <label for="status-time">
+                <div class="status-switch">
+                   
+                </div>
+              </label>
+            </div>
+          </div>
+          <div class="general-hide">
+            <p class="description-date">Date</p>
+            <div class="custom-checkbox">
+              <input id="status-date" class="checkbox" type="checkbox"  name="status-date">
+              <label for="status-date">
+                <div class="status-switch"
+                     data-unchecked="Off"
+                     data-checked="On">
+                </div>
+              </label>
+            </div>
+          </div>
+          <div class="general-hide"> 
+            <p class="description-weather">Weather</p>
+            <div class="custom-checkbox">
+            <input id="status-weather" class="checkbox" type="checkbox"  name="status-weather">
+            <label for="status-weather">
+              <div class="status-switch"
+                   data-unchecked="Off"
+                   data-checked="On">
+              </div>
+            </label>
+            </div>
+           </div>
+          <div class="general-hide">
+           <p class="description-greeting">Greeting</p>
+           <div class="custom-checkbox">
+            <input id="status-greeting" class="checkbox" type="checkbox"  name="status-greeting">
+            <label for="status-greeting">
+              <div class="status-switch"
+                   data-unchecked="Off"
+                   data-checked="On">
+              </div>
+            </label>
+            </div>
+          </div>
+          <div class="general-hide">
+            <p class="description-quotes">Quotes</p>
+            <div class="custom-checkbox">
+              <input id="status-quotes" class="checkbox" type="checkbox"  name="status-quotes">
+              <label for="status-quotes">
+                <div class="status-switch"
+                     data-unchecked="Off"
+                     data-checked="On">
+                </div>
+              </label>
+              </div>
+
+          </div>
+          <div class="general-hide">
+          <p class="description-advanced">Advanced player</p>
+          <div class="custom-checkbox">
+            <input id="status-advanced" class="checkbox" type="checkbox"  name="status-advsnced">
+            <label for="status-advanced">
+              <div class="status-switch"
+                   data-unchecked="Off"
+                   data-checked="On">
+              </div>
+            </label>
+            </div>
+          </div>
+          <div class="general-hide">
+            <p class="description-player">Player</p>
+            <div class="custom-checkbox">
+              <input id="status-player" class="checkbox" type="checkbox"  name="status-player">
+              <label for="status-player">
+                <div class="status-switch"
+                     data-unchecked="Off"
+                     data-checked="On">
+                </div>
+              </label>
+              </div>
+          </div>
+          <div class="general-hide general-todo">
+            <p class="description-todo">TODO</p>
+            <div class="custom-checkbox">
+              <input id="status-todo" class="checkbox" type="checkbox"  name="status-todo" >
+              <label for="status-todo">
+                <div class="status-switch"
+                     data-unchecked="Off"
+                     data-checked="On">
+                </div>
+              </label>
+              </div>
+          </div>
+        </div>
+        <div class="settings-images hideTotally">
+          <div class="general-title general-images-title">Images</div>
+          <div class="general-decription general-images-description">See a new inspiring image every day</div>
+          <div class="general-show general-description-show">feeds</div>
+          <div class="general-hide">
+            <p>GitHub</p> 
+            <div class="custom-checkbox">
+              <input id="images-github" class="checkbox radio" type="radio"  name="images">
+              <label for="images-github">
+                <div class="status-switch">
+                   
+                </div>
+              </label>
+            </div>
+          </div>
+         
+           <div class="general-hide">
+              <p>Unsplash API</p> 
+              <div class="custom-checkbox">
+                <input id="images-unsplash" class="checkbox radio" type="radio"  name="images">
+                <label for="images-unsplash">
+                  <div class="status-switch">
+                     
+                  </div>
+                </label>
+              </div>
+          </div>
+           
+          <div class="general-hide">
+                <p>Flickr API</p> 
+                <div class="custom-checkbox">
+                  <input id="images-flickr" class="checkbox radio" type="radio"  name="images">
+                  <label for="images-flickr">
+                    <div class="status-switch">
+                       
+                    </div>
+                  </label>
+                </div>
+          </div>
+          <div class="general-hide general-input invisible">
+            <div class="settings-search"></div>
+            <input type="text" class ="settings-input" placeholder="Write keyword to search images...">
+          </div>
+              
+        </div>
+       
+      </div>
+      
+    </div>
+    <button class="change-quote"></button>
+    <div>
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+    <div class="todo-button"></div>
+    <div class="todo-popup">
+      <div class="todo-header">
+        <span class="todo-header-title">Inbox</span>
+        <div class="todo-header-icon"></div>
+        <div class="todo-header-popup hide">
+          <div class="todo-header-popup-inbox">Inbox</div>
+          <div class="todo-header-popup-inbox">Today</div>
+          <div class="todo-header-popup-inbox">Done</div>
+        </div>
+      </div>
+      <div class="todo-wrapper">
+        <div class="first-wrapper">
+          <p class="todo-title">
+            Add a todo to get started
+          </p>
+          <div class="buttonNewTodo">New Todo</div>
+        </div>
+        <div class="inbox-wrapper hideTotally">
+
+        </div>
+        <div class="today-wrapper hideTotally"></div>
+        <div class="done-wrapper hideTotally"></div>
+        </div>
+        
+       
+      <div class="todo-footer ">
+        <input type="text" class="todo-input" placeholder="New Todo">
+      </div>
+    </div>
+  </footer>
+ 
+</body>
+</html>

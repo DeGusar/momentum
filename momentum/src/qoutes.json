@@ -1,0 +1,363 @@
+[
+    {
+      "textEN":  "Success is the child of audacity",
+      "textRU": "Успех — дитя смелости",
+      "authorEN": "Benjamin Disraeli",
+      "authorRU": "Бенджамин Дизраэли"
+    },
+    {
+        "textEN":   "Success consists of going from failure to failure without loss of enthusiasm",
+      "textRU": "Успех — это умение двигаться от неудачи к неудаче, не теряя энтузиазма",
+      "authorEN": "Winston Churchill",
+      "authorRU": "Уинстон Черчилль"
+    },
+      {
+        "textEN":  "You miss 100% of the shots you don’t take",
+        "textRU": "Вы промахнётесь 100 раз из 100 бросков, которые так и не сделаете",
+        "authorEN":  "Wayne Gretzky",
+        "authorRU": "Уэйн Гретцки"
+    },
+      {
+        "textEN":   "It is not the strongest of the species that survives, nor the most intelligent, but the one most responsive to change",
+        "textRU": "Выживает не самый сильный и не самый умный, а тот, кто лучше всех приспосабливается к изменениям",
+        "authorEN":  "Charles Darwin",
+        "authorRU":  "Чарльз Дарвин"
+    },
+      {
+        "textEN":  "Build your own dreams, or someone else will hire you to build theirs",
+        "textRU": "Воплощайте собственные мечты, или кто-то другой наймёт вас, чтобы воплощать свои",
+        "authorEN":  "Farrah Gray",
+        "authorRU": "Фаррах Грей"
+    },
+      {
+        "textEN": "The will to win, the desire to succeed, the urge to reach your full potential… these are the keys that will unlock the door to personal excellence",
+        "textRU": "Воля к победе, желание добиться успеха, стремление полностью раскрыть свои возможности… вот те ключи, которые откроют дверь к личному совершенству",
+        "authorEN": "Confucius",
+        "authorRU": "Конфуций"
+    },
+      {
+        "textEN":  "Fall seven times and stand up eight",
+        "textRU": "Упади семь раз, поднимись восемь",
+        "authorEN":  "Japanese Proverb",
+        "authorRU": "Японская пословица"
+    },
+      {
+        "textEN": "There are no shortcuts to any place worth going",
+        "textRU": "К достойной цели нет коротких путей",
+        "authorEN":  "Helen Keller",
+        "authorRU": "Хелен Келлер"
+    },
+      {
+        "textEN":  "Success is not the key to happiness. Happiness is the key to success",
+        "textRU": "Успех — не ключ к счастью. Это счастье — ключ к успеху",
+        "authorEN":  "Herman Cain",
+        "authorRU": "Герман Кейн"
+    },
+      {
+        "textEN":  "The mind is everything. What you think you become",
+        "textRU": "Ум — это всё. Что вы думаете, тем вы становитесь",
+        "authorEN":  "Buddha",
+        "authorRU": "Будда"
+    },
+      {
+        "textEN":  "We can easily forgive a child who is afraid of the dark; the real tragedy of life is when men are afraid of the light",
+        "textRU": "Можно с лёгкостью простить ребёнка, который боится темноты. Настоящая трагедия жизни — когда взрослые люди боятся света",
+        "authorEN":  "Plato",
+        "authorRU": "Платон"
+    },
+      {
+        "textEN":  "When I do good, I feel good. When I do bad, I feel bad. That’s my religion",
+        "textRU": "Когда я делаю добро, я чувствую себя хорошо. Когда я поступаю плохо, я чувствую себя плохо. Вот моя религия",
+        "authorEN":  "Abraham Lincoln",
+        "authorRU": "Авраам Линкольн"
+    },
+      {
+        "textEN":  "Be soft. Do not let the world make you hard. Do not let pain make you hate. Do not let the bitterness steal your sweetness. Take pride that even though the rest of the world may disagree, you still believe it to be a beautiful place",
+        "textRU": "Будь мягким. Не позволяй миру ожесточить тебя. Не дай боли заставить тебя ненавидеть. Не допусти, чтобы горечь украла твою сладость. Гордись тем, что, пусть даже мир с тобой не согласен, ты всё равно считаешь его прекрасным местом",
+        "authorEN":  "Kurt Vonnegut",
+        "authorRU": "Курт Воннегут"
+    },
+      {
+        "textEN":  "I am not a product of my circumstances. I am a product of my decisions",
+        "textRU": "Я не продукт моих обстоятельств. Я продукт моих решений",
+        "authorEN":  "Stephen Covey",
+        "authorRU": "Стивен Кови"
+    },
+      {
+        "textEN":  "Remember no one can make you feel inferior without your consent",
+        "textRU": "Помните: никто не может заставить вас почувствовать себя униженным без вашего согласия",
+        "authorEN":  "Eleanor Roosevelt",
+        "authorRU": "Элеонора Рузвельт"
+    },
+      {
+        "textEN":  "It’s not the years in your life that count. It’s the life in your years",
+        "textRU": "Имеет значение не количество прожитых лет, а качество вашей жизни в эти годы",
+        "authorEN":  "Abraham Lincoln",
+        "authorRU": "Авраам Линкольн"
+    },
+      {
+        "textEN":  "Either write something worth reading or do something worth writing",
+        "textRU": "Или напишите то, что стоит прочитать, или сделайте то, о чём стоит написать",
+        "authorEN":  "Benjamin Franklin",
+        "authorRU": "Бенджамин Франклин"
+    },
+      {
+        "textEN":  "There are people who have money and people who are rich",
+        "textRU": "Есть люди, у которых есть деньги, и есть богатые люди",
+        "authorEN":  "Coco Chanel",
+        "authorRU": "Коко Шанель"
+    },
+      {
+        "textEN":   "The most important kind of freedom is to be what you really are. You trade in your reality for a role. You trade in your sense for an act. You give up your ability to feel, and in exchange, put on a mask. There can’t be any large-scale revolution until there’s a personal revolution, on an individual level. It’s got to happen inside first",
+        "textRU": "Самая главная свобода — свобода быть собой. Ты обмениваешь свою реальность на роль, обмениваешь здравый смысл на спектакль. Ты отказываешься чувствовать и взамен надеваешь маску. Никакая масштабная революция невозможна без персональной революции, революции на уровне личности. Она должна сначала произойти внутри",
+        "authorEN":  "Jim Morrison",
+        "authorRU": "Джим Моррисон"
+    },
+      {
+        "textEN":  "You only live once, but if you do it right, once is enough",
+        "textRU": "Мы живём один раз, но если правильно распорядиться жизнью, то и одного раза достаточно",
+        "authorEN":  "Mae West",
+        "authorRU": "Мэй Уэст"
+    },
+      {
+        "textEN":  "Happiness lies in good health and a bad memory",
+        "textRU": "Счастье — это хорошее здоровье и плохая память",
+        "authorEN":  "Ingrid Bergman",
+        "authorRU": "Ингрид Бергман"
+    },
+      {
+        "textEN":  "Your time is limited, so don’t waste it living someone else’s life",
+        "textRU": "Ваше время ограничено, так что не теряйте его, проживая чью-то чужую жизнь",
+        "authorEN":  "Steve Jobs",
+        "authorRU": "Стив Джобс"
+    },
+      {
+        "textEN":  "The two most important days in your life are the day you are born and the day you find out why",
+        "textRU": "Два самых важных дня в вашей жизни: день, когда вы родились, и день, когда поняли зачем",
+        "authorEN":  "Mark Twain",
+        "authorRU": "Марк Твен"
+    },
+      {
+        "textEN":  "If you look at what you have in life, you’ll always have more. If you look at what you don’t have in life, you’ll never have enough",
+        "textRU": "Если вы будете смотреть на то, что у вас уже есть в жизни, вы приобретёте ещё больше. Если вы будете смотреть на то, чего у вас нет, вам всегда будет чего-то не хватать",
+        "authorEN":  "Oprah Winfrey",
+        "authorRU": "Ингрид Бергман"
+    },
+      {
+        "textEN":  "Life is 10% what happens to me and 90% of how I react to it",
+        "textRU": "Жизнь на 10% состоит из того, что происходит со мной, и на 90% из того, как я на это реагирую",
+        "authorEN":  "Charles Swindoll",
+        "authorRU": "Чарльз Свиндолл"
+    },
+      {
+        "textEN":  "Nothing is impossible, the word itself says, I’m possible!",
+        "textRU": "Нет ничего невозможного. В самом этом слове заключена возможность!",
+        "authorEN":  "Audrey Hepburn",
+        "authorRU": "Одри Хепбёрн"
+    },
+      {
+        "textEN":  "Always dream and shoot higher than you know you can do. Do not bother just to be better than your contemporaries or predecessors. Try to be better than yourself",
+        "textRU": "Всегда мечтайте и стремитесь превысить предел ваших возможностей. Не ставьте целью быть лучше, чем ваши современники или предшественники. Стремитесь быть лучше самих себя",
+        "authorEN":  "William Faulkner",
+        "authorRU": "Уильям Фолкнер"
+    },
+      {
+        "textEN":  "When I was 5 years old, my mother always told me that happiness was the key to life. When I went to school, they asked me what I wanted to be when I grew up. I wrote down ‘happy’. They told me I didn’t understand the assignment, and I told them they didn’t understand life",
+        "textRU": "Когда мне было пять лет, мама всегда говорила, что счастье — главное в жизни. Когда я пошёл в школу, меня спросили, кем я хочу быть, когда вырасту. Я написал: „Счастливым человеком“. Тогда мне сказали, что я не понял вопроса, а я ответил, что они не понимают жизни",
+        "authorEN":  "John Lennon",
+        "authorRU": "Джон Леннон"
+    },
+      {
+        "textEN":  "Don’t cry because it’s over, smile because it happened",
+        "textRU": "Не плачь, потому что это закончилось, улыбнись, потому что это было",
+        "authorEN":  "Dr. Seuss",
+        "authorRU": "Доктор Сьюз"
+    },
+      {
+        "textEN":  "Happiness lies in good health and a bad memory",
+        "textRU": "Счастье — это хорошее здоровье и плохая память",
+        "authorEN":  "Ingrid Bergman",
+        "authorRU": "Ингрид Бергман"
+    },
+      {
+        "textEN": "You yourself, as much as anybody in the entire universe, deserve your love and affection",
+        "textRU": "Вы сами, не меньше чем кто-либо другой во Вселенной, заслуживаете своей любви",
+        "authorEN":  "Buddha",
+        "authorRU": "Будда"
+    },
+      {
+        "textEN":  "Love is an irresistible desire to be irresistibly desired",
+        "textRU": "Любовь — это непреодолимое желание быть непреодолимо желанным",
+        "authorEN":  "Robert Frost",
+        "authorRU": "Роберт Фрост"
+    },
+      {
+        "textEN":  "The very essence of romance is uncertainty",
+        "textRU": "Вся суть романтических отношений — в неопределенности",
+        "authorEN":  "Oscar Wilde",
+        "authorRU": "Оскар Уайльд"
+    },
+      {
+        "textEN": "It was love at first sight, at last sight, at ever and ever sight",
+        "textRU": "Это была любовь с первого взгляда, с последнего взгляда, с извечного взгляда",
+        "authorEN":  "Vladimir Nabokov, Lolita",
+        "authorRU": "Владимир Набоков"
+    },
+      {
+        "textEN":  "You know you’re in love when you can’t fall asleep because reality is finally better than your dreams",
+        "textRU": "Вы понимаете, что влюблены, когда не можете заснуть, потому что реальность наконец-то прекраснее ваших снов",
+        "authorEN":  "Dr. Seuss",
+        "authorRU": "Доктор Сьюз"
+    },
+      {
+        "textEN":   "True love is rare, and it’s the only thing that gives life real meaning",
+        "textRU": "Истинная любовь встречается редко, и только она придаёт жизни подлинный смысл",
+        "authorEN": "Nicholas Sparks",
+        "authorRU": "Николас Спаркс"
+    },
+      {
+        "textEN":  "When love is not madness it is not love",
+        "textRU": "Если любовь не безумна, то это не любовь",
+        "authorEN":  "Pedro Calderón de la Barca",
+        "authorRU": "Педро Кальдерон де ла Барка"
+    },
+      {
+        "textEN":  "And he took her in his arms and kissed her under the sunlit sky, and he cared not that they stood high upon the walls in the sight of many",
+        "textRU": "И он обнял её и поцеловал под залитым солнцем небом, и он не заботился о том, что они стоят высоко на стене под взглядами толпы",
+        "authorEN":  "J. R. R. Tolkien",
+        "authorRU": "Дж. Р. Р. Толкиен"
+    },
+      {
+        "textEN":  "Love all, trust a few, do wrong to none",
+        "textRU": "Люби всех, доверяй избранным и никому не делай зла",
+        "authorEN":  "William Shakespeare",
+        "authorRU": "Уильям Шекспир"
+    },
+      {
+        "textEN":  "Never compare your love story with those in the movies, because they are written by scriptwriters. Yours is written by God",
+        "textRU": "Никогда не сравнивайте свою историю любви с кинофильмами. Их придумали сценаристы, вашу же написал сам Бог",
+        "authorEN":  "Jason Stathem",
+        "authorRU": "Джейсон Стейтем"
+    },
+      {
+        "textEN":  "The limits of my language are the limits of my world",
+        "textRU": "Границы моего языка — это границы моего мира",
+        "authorEN":  "Ludwig Wittgenstein",
+        "authorRU": "Людвиг Витгенштейн"
+    },
+      {
+        "textEN":   "Learning is a treasure that will follow its owner everywhere",
+        "textRU": "Знание — это сокровище, которое всюду следует за тем, кто им обладает",
+        "authorEN":  "Chinese Proverb",
+        "authorRU":"Китайская пословица"
+    },
+      {
+        "textEN":   "You can never understand one language until you understand at least two",
+        "textRU": "Вы никогда не поймёте один язык, пока не будете понимать хотя бы два",
+        "authorEN": "Geoffrey Willans",
+        "authorRU":"Джеффри Вилланс"
+    },
+      {
+        "textEN":  "To have another language is to possess a second soul",
+        "textRU": "Владеть вторым языком означает обладать второй душой",
+        "authorEN":  "Charlemagne",
+        "authorRU": "Карл Великий"
+    },
+      {
+        "textEN":  "Language is the blood of the soul into which thoughts run and out of which they grow",
+        "textRU": "Язык — это кровь души, в которую текут мысли и из которой они произрастают",
+        "authorEN":  "Oliver Wendell Holmes",
+        "authorRU": "Оливер Уэнделл Холмс"
+    },
+      {
+        "textEN":  "Knowledge is power",
+        "textRU": "Знание — сила",
+        "authorEN":  "Sir Francis Bacon",
+        "authorRU": "Фрэнсис Бэкон"
+    },
+      {
+        "textEN": "Learning is a gift. Even when pain is your teacher",
+        "textRU": "Познание — это дар. Даже когда боль — твой учитель",
+        "authorEN":  "Maya Watson",
+        "authorRU": "Майя Уотсон"
+    },
+      {
+        "textEN":  "You can never be overdressed or overeducated",
+        "textRU": "Нельзя быть слишком хорошо одетым или слишком хорошо образованным",
+        "authorEN":  "Oscar Wilde",
+        "authorRU": "Оскар Уайльд"
+    },
+      {
+        "textEN": "Never make fun of someone who speaks broken English. It means they know another language",
+        "textRU": "Никогда не смейтесь над человеком, который говорит на ломаном английском. Это значит, что он знает и другой язык",
+        "authorEN":  "H. Jackson Brown, Jr.",
+        "authorRU": "Х. Джексон Браун — младший"
+    },
+      {
+        "textEN":  "Live as if you were to die tomorrow. Learn as if you were to live forever",
+        "textRU": "Живи так, будто умрёшь завтра. Учись так, будто будешь жить вечно",
+        "authorEN": "Mahatma Gandhi",
+        "authorRU": "Махатма Ганди"
+    },
+      {
+        "textEN":  "Have no fear of perfection; you’ll never reach it",
+        "textRU": "Не бойтесь совершенства; вам его никогда не достичь",
+        "authorEN":  "Salvador Dali",
+        "authorRU": "Сальвадор Дали"
+    },
+      {
+        "textEN":   "Only two things are infinite — the universe and human stupidity, and I’m not sure about the former",
+        "textRU": "Две вещи бесконечны — Вселенная и человеческая глупость, но насчёт Вселенной я не уверен",
+        "authorEN":  "Albert Einstein",
+        "authorRU": "Альберт Эйнштейн"
+    },
+      {
+        "textEN":  "All you need in this life is ignorance and confidence, and then success is sure",
+        "textRU": "Имейте в жизни только невежество и самоуверенность, и успех не заставит себя ждать",
+        "authorEN":  "Mark Twain",
+        "authorRU": "Марк Твен"
+    },
+      {
+        "textEN":  "If a book about failures doesn’t sell, is it a success?",
+        "textRU": "Если книга о провале не продаётся, можно ли считать это успехом?",
+        "authorEN":  "Jerry Seinfeld",
+        "authorRU": "Джерри Сайнфелд"
+    },
+      {
+        "textEN":  "Life is pleasant. Death is peaceful. It’s the transition that’s troublesome",
+        "textRU": "Жизнь приятна. Смерть безмятежна. Вся проблема в переходе от одного к другому",
+        "authorEN":  "Isaac Asimov",
+        "authorRU": "Айзек Азимов"
+    },
+      {
+        "textEN": "Accept who you are. Unless you’re a serial killer",
+        "textRU": "Примите себя таким, какой вы есть. Только если вы не серийный убийца",
+        "authorEN":  "Ellen DeGeneres, Seriously… I’m Kidding",
+        "authorRU": "Эллен Дедженерес"
+    },
+      {
+        "textEN":  "A pessimist is a man who thinks everybody is as nasty as himself, and hates them for it",
+        "textRU": "Пессимист — это человек, который считает всех настолько же невыносимыми, как он сам, и ненавидит их за это",
+        "authorEN":  "George Bernard Shaw",
+        "authorRU": "Джордж Бернард Шоу"
+    },
+      {
+        "textEN": "Always forgive your enemies. Nothing annoys them more",
+        "textRU": "Всегда прощайте своих врагов — ничто не раздражает их сильнее",
+        "authorEN": "Oscar Wilde",
+        "authorRU": "Оскар Уайльд"
+    },
+      {
+        "textEN":  "If you would like to know the value of money, try to borrow some",
+        "textRU": "Хотите узнать цену деньгам? Попробуйте взять взаймы",
+        "authorEN":  "Benjamin Franklin",
+        "authorRU": "Бенджамин Франклин"
+    },
+      {
+        "textEN":  "Life would be tragic if it weren’t funny",
+        "textRU": "Жизнь была бы трагичной, если бы не была такой забавной",
+        "authorEN":  "Stephen Hawking",
+        "authorRU": "Стивен Хокинг"
+    }
+     
+  ]  

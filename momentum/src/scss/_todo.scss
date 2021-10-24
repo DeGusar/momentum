@@ -1,0 +1,188 @@
+.todo-button{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    height: 40px;
+    width: 40px;
+    opacity: 1;
+    cursor: pointer;
+    background: url(./svg/todo.svg);
+    background-size: 100% 100%;
+    background-position: center;
+    filter: invert(99%) sepia(9%) saturate(206%) hue-rotate(50deg) brightness(91%) contrast(88%);
+    transition: transform 1s;
+}
+
+.todo-popup {
+    width: 320px;
+    height: auto;
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    right: 10px;
+    bottom: 90px;
+    background-color: black;
+    border-radius: 5px;
+    display: flex;
+    pointer-events: none;
+    transition: opacity 1s ease;
+    flex-direction: column;
+    > div {
+     width: 100%;
+    }
+    &::after {
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    display: block;
+    opacity: 1;
+    right: 32px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    bottom: -7px;
+    border-top: 7px solid black;
+    }
+}
+    .todo-header {
+        height: 55px;
+        padding: 20px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        cursor: pointer;
+       position: relative;
+    }
+    .todo-header-popup {
+        position: absolute;
+        width: 240px;
+        height: 100px;
+        background: rgb(51,51,51);
+        border-radius: 5px;
+        top: 55px;
+        padding: 2px 0 2px 20px;
+        & div {
+            padding: 7px 0;
+            height: 32px;
+           display: flex;
+           justify-content: start;
+           align-items: center;
+        }
+        &::after {
+            content: "";
+            height: 0;
+            width: 0;
+            position: absolute;
+            display: block;
+            opacity: 1;
+            left: 24px;
+            border-left: 7px solid transparent;
+            border-right: 7px solid transparent;
+            top: -7px;
+            border-bottom: 7px solid rgb(51,51,51);
+            }
+    }
+    .todo-header-title {
+        font-size: 20px;
+        text-transform: capitalize;
+        white-space: nowrap;
+    }
+     .todo-wrapper {
+        min-height: 152px;
+       padding: 0 20px;
+       overflow-y: auto;
+       max-height: 400px;
+       
+        font-size: 16px;
+        font-weight: 500;
+     }
+         .buttonNewTodo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           margin-top: 15px;
+            width: 115px;
+            height: 30px;
+            border-radius: 50px;
+            color: white;
+            opacity: 1;
+            cursor: pointer;
+            background: rgba(76, 92, 51, 0.95);
+            > p {
+                width: 100%;
+            }
+
+        }
+    
+     .todo-footer{
+        height: 40px;
+        opacity: 0;
+        pointer-events: none;
+       
+    }
+    
+     .todo-input {
+        width: 100%;
+        height: 100%;
+        font-weight: 400;
+        font-size: 16px;
+        color: white;
+        opacity: 0.6;
+        background: black;
+        padding-left: 20px;
+
+         &::placeholder {
+        color: white;
+        opacity: 0.6;
+
+    }
+}
+.first-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.todo-header-icon {
+    width: 10px;
+    height: 100%;
+    position: relative;
+    margin-left: 10px;
+    z-index: 2;
+    background: url('./svg/angleArrow.svg');
+    background-size: 100% 100%;
+    background-position: center;
+    filter: invert(99%) sepia(9%) saturate(206%) hue-rotate(50deg) brightness(91%) contrast(88%);
+
+}
+
+.inbox-wrapper, .done-wrapper {
+   width: 100%;
+   height: 100%;
+    display: flex;
+  
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+}
+
+.reminder {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: start;
+    column-gap: 5px;
+    align-items: center;
+
+}
+.remindertext{
+    text-align: left;
+    height: 100%;
+    border:none;
+    font-size: 16px;
+    color: white;
+    background: #000;
+}

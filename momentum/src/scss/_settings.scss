@@ -1,0 +1,353 @@
+.settings-popup {
+    width: 620px;
+    height: 610px;
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    bottom: 90px;
+    background-color: black;
+    border-radius: 5px;
+    display: flex;
+    pointer-events: none;
+   
+    transition: opacity 1s ease;
+    &::after{
+        content: "";
+        height: 0;
+        width: 0;
+        position: absolute;
+        display: block;
+        opacity: 1;
+        left: 33px;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        bottom: -10px;
+        border-top: 10px solid black;
+
+    }
+}
+.invisible{
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s ease;
+}
+.visible {
+   
+    opacity: 0.9;
+    transition: opacity 1s ease ;
+    pointer-events: all;
+    
+}
+.hideTotally {
+    display: none;
+}
+.settings-list {
+    width: 200/620*100%;
+    position: relative;
+    height: 100%;
+    border-right: rgb(255,255,255, 0.2) 1px solid ;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px 20px 20px; 
+    justify-content: start;
+    row-gap: 10px;
+    align-items: start;
+    opacity: 0.8;
+    & div {
+     cursor: pointer;   
+    }
+
+}
+.settings-general {
+    height: 100%;
+    width: 420/620*100% ;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    text-align: left;
+    overflow-y: auto;
+    > div {
+        width: 100%;
+    }
+    & .general-title {
+        font-weight: 600;
+        font-size: 22px;
+    }
+    & .general-decription{
+        opacity: 0.8;
+        padding-top: 5px;
+        font-size: 14px;
+    }
+    & .general-show {
+        opacity: 1;
+        font-size: 16px;
+        text-transform: uppercase;
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }
+    & .general-hide{
+        font-size: 15px;
+        height: 40px;
+        border-top: rgb(255,255,255, 0.3) 1px solid ;
+      
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    & .general-todo {
+        border-bottom: rgb(255,255,255, 0.3) 1px solid ;
+    }
+    & .general-language {
+        opacity: 1;
+        font-size: 16px;
+        text-transform: uppercase;
+        padding-top: 25px;
+    }
+    & .bordered {
+        border-bottom: rgb(255,255,255, 0.3) 1px solid ;
+        margin-top: 15px;
+    }
+   
+
+}
+.user-list {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    width: 100%;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    & .user-img {
+        width: 35px;
+        height: 35px;
+        background: url("./images/user.png");
+        background-position: center;
+        background-size: 100% 100%;
+        border-radius: 50%;
+    }
+    & .user-name {
+        padding-left: 10px;
+    }
+    
+}
+
+.custom-checkbox {
+    width: 33px;
+    height: 20px;
+    text-align: right;
+    position: relative;
+    & input#status,input#status-quotes,input#status-time,input#status-date,input#status-weather,input#status-greeting,input#status-advanced,input#status-player,input#status-todo,input#images-github,input#images-unsplash,input#images-flickr {
+        display: none;
+         }
+    
+    
+    & label {
+        height: 100%;
+        width: 100%;
+        display: block;
+        position: relative;
+    
+    & .status-switch {
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-color: grey;
+        color: white;
+        transition: all 0.5s ease;
+        padding: 3px;
+        border-radius: 30px;
+    }
+    &::before {
+        border-radius: 50%;
+        height: 12px;
+        width: 12px;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        justify-content: center;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        }
+    &:before {
+        content: "";
+        background-color: white;
+        color: black;
+        box-shadow: 0 0 4px 4px rgba(#000, 0.2);
+        top: calc(50% - 6px);
+        left: 4px;
+        z-index: 10;
+       
+        }
+    
+    }
+        
+    
+}
+.custom-checkbox {
+    & input#status:checked + label > .status-switch,
+    & input#status-quotes:checked + label > .status-switch,
+    & input#status-time:checked + label > .status-switch,
+    & input#status-date:checked + label > .status-switch,
+    & input#status-weather:checked + label > .status-switch,
+    & input#status-greeting:checked + label > .status-switch,
+    & input#status-advanced:checked + label > .status-switch,
+    & input#images-github:checked + label > .status-switch,
+    & input#images-unsplash:checked + label > .status-switch,
+    & input#images-flickr:checked + label > .status-switch,
+    & input#status-player:checked + label > .status-switch,
+    & input#status-todo:checked + label > .status-switch{
+    background-color: green;
+    }
+
+    & input#status:checked + label::before,
+    & input#status-quotes:checked + label::before,
+    & input#status-time:checked + label::before,
+    & input#status-date:checked + label::before,
+    & input#status-weather:checked + label::before,
+    & input#status-greeting:checked + label::before,
+    & input#status-advanced:checked + label::before,
+    & input#status-player:checked + label::before,
+    & input#images-github:checked + label::before,
+    & input#images-unsplash:checked + label::before,
+    & input#images-flickr:checked + label::before,
+    & input#status-todo:checked + label::before{
+      color: rgb(3, 168, 3);
+      left: calc(50% - 2px);
+      transform: scale(1.2);
+    }
+}
+
+.settings-input {
+    margin-top: 15px;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background-color: rgb(170, 166, 166);
+    color: white;
+    font-size: 15px;
+    opacity: 1;
+    padding-left: 50px;
+    &::placeholder {
+        color: white;
+        letter-spacing: 1px;
+       
+    }
+}
+.general-input {
+    position: relative;
+}
+.settings-search {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    background: url("./svg/search.svg") no-repeat;
+    background-position: center;
+    cursor: pointer;
+    background-size: 20px 20px;
+    transition: scale 1s ease ;
+    filter: invert(99%) sepia(9%) saturate(206%) hue-rotate(50deg) brightness(91%) contrast(88%);
+    &:hover {
+        transform: scale(1.2);
+        transition: scale 1s ease ;
+    }
+    
+}
+
+
+
+.language-checkbox {
+    width: 60px;
+    height: 20px;
+    text-align: right;
+    position: relative;
+    & input#language {
+      display: none;
+    
+            
+    + label {
+        height: 100%;
+        width: 100%;
+        display: block;
+        position: relative;
+    
+    > .status-switch-language {
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-color: grey;
+        color: white;
+        transition: all 0.5s ease;
+        padding: 3px;
+        border-radius: 3px;
+    
+    &::before {
+        border-radius: 2px;
+        height: calc(100% - 6px);
+        width: calc(50% - 3px);
+        display: flex;
+        align-items: center;
+        position: absolute;
+        justify-content: center;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        }
+    &::after {
+        border-radius: 2px;
+        height: calc(100% - 7px);
+        width: calc(50% - 3px);
+        display: flex;
+        align-items: center;
+        position: absolute;
+        justify-content: center;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    &:before {
+        content: attr(data-unchecked);
+        background-color: white;
+        color: black;
+        box-shadow: 0 0 4px 4px rgba(#000, 0.2);
+        top: calc(50% - 7px);
+        left: 3px;
+        z-index: 10;
+       
+        }
+    &::after {
+        right: 0;
+        content: attr(data-checked);
+    }
+    
+    }
+}
+
+  
+
+    &:checked + label > .status-switch-language{
+       
+        
+        &:after {
+            left: 0;
+            content: "";
+             content: attr(data-unchecked);
+          } 
+        &:before{
+            
+            left: 50%;
+            content: attr(data-checked);
+           
+          }
+         
+    
+        }
+    }
+}
