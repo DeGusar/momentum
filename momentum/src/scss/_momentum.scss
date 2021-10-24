@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Arial-MT';
-  src: url("./fonts/Arial-MT.woff"); /* Путь к файлу со шрифтом */
+  src: url("../fonts/Arial-MT.woff"); /* Путь к файлу со шрифтом */
  }
   
   * {
@@ -39,7 +39,7 @@
   width: 40px;
   opacity: 0.8;
   cursor: pointer;
-  background: url("./svg/settings.svg");
+  background: url("../svg/settings.svg");
   background-size: 100% 100%;
   background-position: center;
   filter: invert(99%) sepia(9%) saturate(206%) hue-rotate(50deg) brightness(91%) contrast(88%);
@@ -162,7 +162,7 @@
   .volume-button {
     width: 25px;
     height: 25px;
-    background: url("./images/volume.svg");
+    background: url("../images/volume.svg");
     background-position: center;
     background-size: 100% 100%;
     cursor: pointer;
@@ -197,7 +197,7 @@
   .play-item-button {
     content: "";  
     position: absolute;
-    background: url('./svg/play.svg');
+    background: url('../svg/play.svg');
     background-position: center center;
     background-size: 100% 100%;
    
@@ -251,24 +251,24 @@
     width: 40px;
     height: 40px;
     background-size: 40px 40px;
-    background-image: url("./svg/play.svg");
+    background-image: url("../svg/play.svg");
   }
   
   .pause {
-    background-image: url("./svg/pause.svg");
+    background-image: url("../svg/pause.svg");
     
   }
   .pause-playlist {
-    background-image: url("./svg/pause.svg");
+    background-image: url("../svg/pause.svg");
    
   }
   
   .play-prev {
-    background-image: url("./svg/play-prev.svg");
+    background-image: url("../svg/play-prev.svg");
   }
   
   .play-next {
-    background-image: url("./svg/play-next.svg");
+    background-image: url("../svg/play-next.svg");
   }
   
   .weather {
@@ -342,12 +342,12 @@
   
   .slide-prev {
     left: 20px;
-    background-image: url("./svg/slider-prev.svg");
+    background-image: url("../svg/slider-prev.svg");
   }
   
   .slide-next {
     right: 20px;
-    background-image: url("./svg/slider-next.svg");
+    background-image: url("../svg/slider-next.svg");
   }
   
   .time {
@@ -421,7 +421,7 @@
   
   .change-quote {
     margin-bottom: 30px;
-    background-image: url("./svg/reload.svg");  
+    background-image: url("../svg/reload.svg");  
   }
   
   .quote {

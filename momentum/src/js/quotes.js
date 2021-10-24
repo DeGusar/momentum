@@ -7,7 +7,7 @@ import { lang } from "./settings";
 
 
 export async function getQuotes() {
-    const quotes = '../qoutes.json';
+    const quotes = './qoutes.json';
     const res = await fetch(quotes);
     const data = await res.json();
   let randomQuote = getRandom(0, 59);
