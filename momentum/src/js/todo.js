@@ -11,15 +11,17 @@ let todayWrapper = document.querySelector('.today-wrapper');
 let doneWrapper = document.querySelector('.done-wrapper');
 
 
+
+
+
+
 let isTodoOpen = false
 function tooglePopupSettings() {
     if (!isTodoOpen) {
         todoPopup.classList.add('visible')
         todoButton.classList.add('activeButton');
         todoInput.focus()
-       /*  setTimeout(function () {
-            generalSettings.classList.remove('hideTotally')
-        }, 1000); */
+      
        
         isTodoOpen = true
     } else {
@@ -54,9 +56,8 @@ buttonNewTodo.addEventListener('click', function () {
 
 })
 
-todoInput
-inboxWrapper
-
+let todoArray = [];
+let todoIndex = 0
 class item{
 	constructor(name){
 		this.createItem(name);
@@ -68,40 +69,68 @@ class item{
     	let input = document.createElement('input');
     	input.type = "checkbox";
      
-        input.classList.add('checkbox-todo');
-        
+        input.classList.add(`checkbox-todo`);
+        input.setAttribute('id', `checkbox-todo${todoIndex}`);
+       
+       
+
         let label = document.createElement('label');
         label.textContent = name;
-        label.classList.add('remindertext');
+        label.classList.add(`remindertext${todoIndex}`);
+        label.setAttribute('for', `checkbox-todo${todoIndex}`);
+        
+        input.addEventListener('click', () => this.check(input, name,label));
 
-    	let remove = document.createElement('div');
-    	remove.classList.add('remove');
-    	remove.innerHTML = "<i class='fas fa-trash'></i>";
-    	remove.addEventListener('click', () => this.remove(itemBox, name));
-
+    	
     	inboxWrapper.appendChild(itemBox);
         itemBox.appendChild(input);
         itemBox.appendChild(label);
+        todoArray.push(`checkbox-todo${todoIndex}`)
+    }
+    check(input, name, label) {
+        if (input.checked) {
+            label.classList.add('linethrough');
+           
+        } else {
+            label.classList.remove('linethrough');
+            
+        }
     }
 }
-
-
-
 function check(){
 	if(todoInput.value != ""){
-		new item(todoInput.value);
+     new item(todoInput.value);
+     
+       
         todoInput.value = "";
+        
+        todoIndex++
         firstWrapper.classList.add('hideTotally');
-            inboxWrapper.classList.remove('hideTotally');
-           
+        inboxWrapper.classList.remove('hideTotally');
+        console.log(todoArray);
+     
     }
     else if(todoInput.value == "")
-    alert("Enter some text")
+        alert("Enter some text")
+        
 }
 
 todoInput.addEventListener('keydown', function(event) {
         if (event.code === 'Enter') {
             check();
+           
           }
     })
     
+function redColor(elem) {
+    if (elem.checked) {
+        elem.style.color = 'red'
+    }
+}
+/* function checkedTodo() {
+    checkBoxesInput.forEach(element => {
+        if (element.checked) {
+            console.log(element.id);
+            }    
+    });
+    } */
