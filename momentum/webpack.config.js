@@ -65,7 +65,7 @@ module.exports = ({ development }) => {
     entry: getEntryPoints(pages),
     context: srcPath,
     output: {
-      filename: 'js/[name].[contenthash].js',
+      filename: 'js/main.js',
       path: path.resolve(__dirname, 'dist'),
       assetModuleFilename: '[file]',
     },
@@ -95,7 +95,7 @@ module.exports = ({ development }) => {
       ],
     },
     plugins: [
-      new MiniCssExtractPlugin({ filename: 'css/[name].[contenthash].css' }),
+      new MiniCssExtractPlugin({ filename: 'style.css' }),
       ...getHtmlPlugins(pages),
       new CopyPlugin({
         patterns: [
