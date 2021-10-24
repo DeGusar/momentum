@@ -21,6 +21,7 @@ function setBG() {
         document.body.style.backgroundImage = `url(${img.src})`;
     }
 }
+
 async function getLinkToImage() {
     const url = `https://api.unsplash.com/photos/random?query=${timeOfDay}&client_id=_Im-M8qZUbqaAv5OeazW9wZ-K_phlWaLcOV77Lqt2VA`;
     const res = await fetch(url);

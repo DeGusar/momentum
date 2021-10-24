@@ -325,6 +325,9 @@ function getLocalStorage() {
       
         
     }
+    else {
+        bgSource()
+    }
 }
 window.addEventListener('load', getLocalStorage);
 
