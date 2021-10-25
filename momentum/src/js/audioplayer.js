@@ -27,7 +27,8 @@ function toggleAudioStatus() {
         buttonPlay.classList.add("pause");
         buttonPlayPlaylist[songNumber].classList.add("pause-playlist");
         songName.textContent = `${playList[songNumber].title}`;
-        songName.classList.add("animation")
+        songName.classList.add("animation");
+        playlistSong[songNumber].classList.add("item-active")
         
         isPlay = true;
     } else {
@@ -36,6 +37,7 @@ function toggleAudioStatus() {
         buttonPlay.classList.remove("pause");
         buttonPlayPlaylist[songNumber].classList.remove("pause-playlist");
         songName.classList.remove("animation")
+        playlistSong[songNumber].classList.remove("item-active")
     }
 }
 buttonPlay.addEventListener('click', toggleAudioStatus);
@@ -44,13 +46,16 @@ function playNext() {
     if (songNumber === 3) {
         songNumber = 0;
         buttonPlayPlaylist[0].classList.add("pause-playlist");
+        playlistSong[0].classList.add("item-active")
         buttonPlayPlaylist[3].classList.remove("pause-playlist");
+        playlistSong[3].classList.remove("item-active")
         
     } else {
         songNumber++
-        buttonPlayPlaylist[songNumber-1].classList.remove("pause-playlist");
+        buttonPlayPlaylist[songNumber - 1].classList.remove("pause-playlist");
+        playlistSong[songNumber - 1].classList.remove("item-active")
         buttonPlayPlaylist[songNumber].classList.add("pause-playlist");
-        
+        playlistSong[songNumber].classList.add("item-active")
     }
     audio.src = playList[songNumber].src;
     songName.textContent = `${playList[songNumber].title}`;
@@ -65,11 +70,15 @@ function playPreviuos() {
     if (songNumber === 0) {
         songNumber = 3;
         buttonPlayPlaylist[3].classList.add("pause-playlist");
+        playlistSong[3].classList.add("item-active")
         buttonPlayPlaylist[0].classList.remove("pause-playlist");
+        playlistSong[0].classList.remove("item-active")
     } else {
         songNumber--;
         buttonPlayPlaylist[songNumber + 1].classList.remove("pause-playlist");
+        playlistSong[songNumber + 1].classList.remove("item-active")
         buttonPlayPlaylist[songNumber].classList.add("pause-playlist")
+        playlistSong[songNumber].classList.add("item-active")
     }
     audio.src = playList[songNumber].src;
     audio.play();
@@ -91,9 +100,11 @@ buttonPlayPlaylist.forEach((elem,index) => {
             buttonPlayPlaylist.forEach((elem, ind) => {
                 if (ind != songNumber) {
                     buttonPlayPlaylist[ind].classList.remove("pause-playlist");
+                    playlistSong[ind].classList.remove("item-active")
                 }
             });
             buttonPlayPlaylist[songNumber].classList.add("pause-playlist");
+            playlistSong[songNumber].classList.add("item-active")
             isPlay = true;
         } else {
             audio.pause();
@@ -101,6 +112,7 @@ buttonPlayPlaylist.forEach((elem,index) => {
             songName.classList.remove("animation")
             buttonPlay.classList.remove("pause");
             buttonPlayPlaylist[songNumber].classList.remove("pause-playlist");
+            playlistSong[songNumber].classList.remove("item-active")
          }
            
         

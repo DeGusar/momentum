@@ -72,7 +72,7 @@ function getSlidePrev() {
             randomNum = 20;
         } else randomNum--;
         setBG();
-        console.log(1);
+      
     }else if (settings.unsplash === 1) {
         if (settings.tag === 1) {
             getLinkToImage(settings.tagvalue)

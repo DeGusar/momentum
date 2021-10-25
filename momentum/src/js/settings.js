@@ -43,12 +43,13 @@ let checkboxGithub = document.getElementById('images-github');
 let checkboxUnsplash = document.getElementById('images-unsplash');
 let checkboxFlickr = document.getElementById('images-flickr');
 let checkboxPlayer = document.getElementById('status-player');
+let checkboxToDo = document.getElementById('status-todo');
 let checkboxLanguage = document.getElementById('language');
 
 let checkboxAll = document.querySelectorAll('.checkbox');
 let radioAll = document.querySelectorAll('.radio');
 export var lang = 'EN';
-
+import { todoButton } from './todo';
 import { showDate } from './time';
 import * as weatherFn from './weather';
 import { getQuotes } from './quotes';
@@ -174,6 +175,15 @@ checkboxPlayer.addEventListener('change', function () {
     } else {
         audioPlayer.classList.remove('invisible');
         settings.player = 0;
+    }
+})
+checkboxToDo.addEventListener('change', function () {
+    if (checkboxToDo.checked) {
+        todoButton.classList.add('invisible');
+        settings.todo = 1;
+    } else {
+        todoButton.classList.remove('invisible');
+        settings.todo = 0;
     }
 })
   
@@ -326,6 +336,7 @@ function getLocalStorage() {
         checkboxQuotes.checked = !!settings.quotes;
         checkboxAdvanced.checked = !!settings.advanced;
         checkboxPlayer.checked = !!settings.player;
+        checkboxToDo.checked = !!settings.todo;
         checkboxGithub.checked = !!settings.github;
         checkboxUnsplash.checked = !!settings.unsplash;
         checkboxFlickr.checked = !!settings.flickr;

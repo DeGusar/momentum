@@ -88,12 +88,12 @@
         white-space: nowrap;
     }
      .todo-wrapper {
-        min-height: 152px;
+       height: 350px;
        padding: 0 20px;
        overflow-y: auto;
-       max-height: 400px;
+      
        
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 500;
      }
          .buttonNewTodo {
@@ -194,4 +194,16 @@
     text-decoration: line-through;
     opacity: 0.5;
     
+}
+
+.remove {
+    width: 21px;
+    height: 21px;
+    background: url("./svg/remove_icon.svg") no-repeat;
+    background-size: 70% 70%;
+    background-position: center;
+    margin-left: 20px;
+    align-self: end;
+   cursor: pointer;
+   filter: invert(100%) sepia(82%) saturate(2%) hue-rotate(89deg) brightness(110%) contrast(100%);
 }

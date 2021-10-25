@@ -1,4 +1,4 @@
-let todoButton = document.querySelector('.todo-button');
+export let todoButton = document.querySelector('.todo-button');
 let todoPopup = document.querySelector('.todo-popup');
 let todoHeader = document.querySelector('.todo-header');
 let todoWrapper = document.querySelector('.todo-wrapper');
@@ -9,6 +9,7 @@ let inboxWrapper = document.querySelector('.inbox-wrapper');
 let firstWrapper = document.querySelector('.first-wrapper');
 let todayWrapper = document.querySelector('.today-wrapper');
 let doneWrapper = document.querySelector('.done-wrapper');
+
 
 
 
@@ -34,15 +35,12 @@ todoButton.addEventListener('click', tooglePopupSettings);
 
 window.addEventListener('click', e => { 
     const target = e.target 
-    if (!target.closest('.todo-button') && !target.closest('.todo-popup')) { 
+    if (!target.closest('.todo-button') && !target.closest('.todo-popup')&& !target.closest('.remove') ) { 
         todoPopup.classList.remove('visible')
         isTodoOpen = false
         todoButton.classList.remove('activeButton');
       
-        /* setTimeout(function () {
-            generalSettings.classList.remove('hideTotally');
-            imagesWindow.classList.add('hideTotally');
-        }, 1000); */
+        
     }
 })
 
@@ -81,11 +79,15 @@ class item{
         
         input.addEventListener('click', () => this.check(input, name,label));
 
-    	
+    	let remove = document.createElement('div');
+    	remove.classList.add('remove');
+    	remove.addEventListener('click', () => this.remove(itemBox));
+
     	inboxWrapper.appendChild(itemBox);
         itemBox.appendChild(input);
         itemBox.appendChild(label);
-        todoArray.push(`checkbox-todo${todoIndex}`)
+        itemBox.appendChild(remove);
+       
     }
     check(input, name, label) {
         if (input.checked) {
@@ -96,11 +98,18 @@ class item{
             
         }
     }
+    remove(itemBox,label){
+        itemBox.parentNode.removeChild(itemBox);
+        todoArray.pop();
+            
+        
+    }
+
 }
 function check(){
 	if(todoInput.value != ""){
      new item(todoInput.value);
-     
+     todoArray.push(todoInput.value);
        
         todoInput.value = "";
         
@@ -122,15 +131,28 @@ todoInput.addEventListener('keydown', function(event) {
           }
     })
     
-function redColor(elem) {
-    if (elem.checked) {
-        elem.style.color = 'red'
-    }
+let chbs = []
+function setLocalStorage() {
+    localStorage.setItem('todo', JSON.stringify(todoArray));
+   
 }
-/* function checkedTodo() {
-    checkBoxesInput.forEach(element => {
-        if (element.checked) {
-            console.log(element.id);
-            }    
-    });
-    } */
+window.addEventListener('beforeunload', setLocalStorage);
+
+function getLocalStorage() {
+    if (localStorage.getItem('todo')) {
+        todoArray = JSON.parse(localStorage.getItem('todo'));
+        todoArray.forEach(element => {
+            new item(element);
+            todoIndex++
+            
+        });
+        if (todoArray.length > 0) {
+            firstWrapper.classList.add('hideTotally');
+        inboxWrapper.classList.remove('hideTotally');
+        todoFooter.classList.add('visible');
+        }
+        
+    }
+    
+}
+window.addEventListener('load', getLocalStorage);

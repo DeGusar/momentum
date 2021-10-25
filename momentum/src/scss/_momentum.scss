@@ -31,7 +31,13 @@
     min-height: 220px;  
     padding: 20px;
   }
-  
+ 
+  .item-active {
+    
+    opacity: 1;
+    text-decoration: underline;
+  }
+
 .settings {
   position: absolute;
   bottom: 30px;
