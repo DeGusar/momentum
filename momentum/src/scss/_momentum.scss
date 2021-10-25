@@ -10,13 +10,14 @@
   }
   
   body {
-    min-width: 480px;
+    
     min-height: 100vh;
     font-family: 'Arial', sans-serif;
     font-size: 16px;
     color: #fff;
     text-align: center;
     background:  center/cover, rgba(0, 0, 0, 0.5);
+   
     background-blend-mode: multiply;
     transition: background-image 1s ease-in-out;
   }
@@ -457,3 +458,62 @@
       padding: 5px;
     }
   }
+
+@media (max-width:420px) {
+  .header {
+    padding: 0;
+  }
+  .player-controls-header {
+    width: 150px;
+  }
+  .weather {
+    width: 140px;
+  }
+  .city {
+    width:150px
+  }
+  .time {
+    font-size: 52px;
+  }
+  .slide-prev, .slide-next {
+    width: 16px;
+    height: 16px;
+    background-position: center;
+    background-size: 100% 100%;
+
+  }
+  .greeting {
+    font-size: 20px;
+  }
+  .main {
+    padding: 10px 0;
+    min-height: 0;
+  } 
+  .footer {
+    padding: 10px 0;
+    min-height: 0;
+    height: auto;
+  }
+  .name {
+    font-size: 20px;
+  }
+  .change-quote {
+    width: 16px;
+    height: 16px;
+    background-position: center;
+    background-size: 100% 100%;
+    margin-bottom: 10px;
+  }
+  .quote {
+    width: 60vw;
+    font-size: 13px;
+  }
+  .settings {
+    width: 20px;
+    height: 20px;
+  }
+  .author {
+    font-size: 13px;
+  }
+}
+ 

@@ -16,6 +16,7 @@ let generalTitle = document.querySelector('.general-title');
 let generalDescription = document.querySelector('.general-decription');
 let generalLanguages = document.querySelector('.general-language');
 let generalImagesTitle = document.querySelector('.general-images-title');
+let tagContent = document.querySelector('.tag-content');
 let descriptionLanguage = document.querySelector('.desctiption-language');
 let descriptionWeather = document.querySelector('.description-weather');
 let descriptionQuotes = document.querySelector('.description-quotes');
@@ -24,6 +25,8 @@ let descriptionAdvanced = document.querySelector('.description-advanced');
 let descriptionDate = document.querySelector('.description-date');
 let UserNamelang = document.querySelector('.user-name');
 let generalShow = document.querySelector('.general-show');
+let deleteTag = document.querySelector('.deleteTag');
+let tagUnsplash = document.querySelector('.tag-unsplash');
 let descriptionTime = document.querySelector('.description-time');
 let descriptionGreeting = document.querySelector('.description-greeting');
 let generalDescriptionShow = document.querySelector('.general-description-show');
@@ -51,6 +54,8 @@ import * as weatherFn from './weather';
 import { getQuotes } from './quotes';
 import * as timeFN from './time'
 import { bgSource } from './slider';
+import { getImageFromFlickr } from './slider'
+import {getLinkToImage} from './slider'
 
 export var settings = {
     'time': 0,
@@ -64,14 +69,16 @@ export var settings = {
     'github': 0,
     'unsplash': 0,
     'flickr': 0,
-    'language':0,
+    'language': 0,
+    'tag': 0,
+    'tagvalue': "", 
 }
 import { TIME } from './time'
 import { DATE } from './time'
 import { audioPlayer } from './audioplayer'
 import { quote, quoteAuthor, changeQuote } from './quotes';
 
-
+export var tag = settingsInputPlaceholder.value;
 
 let isOpen = false
 function tooglePopupSettings() {
@@ -95,10 +102,8 @@ checkboxTime.addEventListener('change', function () {
     if (checkboxTime.checked) {
         TIME.classList.add('invisible');
         settings.time = 1;
-        console.log(checkboxTime.value)
-    } else {
+        } else {
         TIME.classList.remove('invisible');
-        console.log(checkboxTime.value);
         settings.time = 0;
     }
     
@@ -178,6 +183,7 @@ checkboxGithub.addEventListener('change', function () {
         settings.unsplash = 0;
         settings.flickr = 0;
         settingsInput.classList.add('invisible');
+       
         bgSource()
         
     } else {
@@ -191,7 +197,12 @@ checkboxUnsplash.addEventListener('change', function () {
         settings.github = 0;
         settings.flickr = 0;
         settingsInput.classList.remove('invisible');
-        bgSource()
+        if (settings.tag === 1) {
+            getLinkToImage(settings.tagvalue)
+        } else {
+            bgSource()
+        }
+       
     
       } else {
        settings.unsplash = 0;
@@ -204,7 +215,12 @@ checkboxFlickr.addEventListener('change', function () {
         settings.github = 0;
         settings.unsplash = 0;
         settingsInput.classList.remove('invisible');
-        bgSource()
+        if (settings.tag === 1) {
+            getImageFromFlickr(settings.tagvalue)
+        } else {
+            bgSource()
+        }
+        
       } else {
        settings.flickr = 0;
     }
@@ -292,7 +308,8 @@ window.addEventListener('click', e => {
 
 function setLocalStorage() {
     localStorage.setItem('settings', JSON.stringify(settings) );
-    localStorage.setItem('language', lang );
+    localStorage.setItem('language', lang);
+    
     
 }
 window.addEventListener('beforeunload', setLocalStorage);
@@ -313,7 +330,13 @@ function getLocalStorage() {
         checkboxUnsplash.checked = !!settings.unsplash;
         checkboxFlickr.checked = !!settings.flickr;
         checkboxLanguage.checked = !!settings.language;
-        bgSource();
+        if (settings.unsplash === 0 && settings.flickr === 0 && settings.github === 0) {
+            bgSource();
+       }
+        if (settings.tag === 1) {
+            tagUnsplash.classList.remove('hideTotally');
+            tagContent.value = settings.tagvalue;
+        }
         let event = new Event('change');
         checkboxAll.forEach((elem) => {
             elem.dispatchEvent(event)
@@ -325,8 +348,8 @@ function getLocalStorage() {
       
         
     }
-    else {
-        bgSource()
+      else {
+        bgSource();
     }
 }
 window.addEventListener('load', getLocalStorage);
@@ -344,3 +367,32 @@ generalList.addEventListener('click', function () {
 })
 
 
+settingsInputPlaceholder.addEventListener('keydown', function (event) {
+    if (event.code === 'Enter') {
+        
+        tag = settingsInputPlaceholder.value;
+        settings.tagvalue = settingsInputPlaceholder.value;
+        if (settingsInputPlaceholder.value == "") {
+            tagUnsplash.classList.add('hideTotally');
+        } else {
+            settings.tag = 1
+            tagUnsplash.classList.remove('hideTotally');
+        }
+        
+        tagContent.value = settingsInputPlaceholder.value;
+        if (checkboxUnsplash.checked) {
+            getLinkToImage(tag)
+        } else {
+            getImageFromFlickr(tag)
+       }
+    }
+   
+})
+
+deleteTag.addEventListener('click', () => {
+    tagUnsplash.classList.add('hideTotally');
+    settingsInputPlaceholder.value = "";
+    tagContent.value = "";
+    settings.tag = 0;
+    settings.tagvalue = "";
+} )
