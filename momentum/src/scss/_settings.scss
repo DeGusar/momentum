@@ -58,7 +58,7 @@
 .settings-general {
     height: 100%;
     width: 420/620*100% ;
-    padding: 30px;
+    padding: 30px 30px 0 30px;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -388,6 +388,31 @@
     opacity: 0;
     pointer-events: none;
     transition: opacity 1s ease;
+}
+
+.settings-footer {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.github-logo {
+    width: 30px;
+    height: 30px;
+    background: url("./svg/github.svg") ;
+    background-size: 100% 100%;
+    background-position: center;
+
+}
+.rss-logo {
+    width: 50px;
+    height: 40px;
+    background: url("./svg/rs_school.svg");
+    background-size: 100% 100%;
+    background-position: center;
+    filter: invert(100%) sepia(82%) saturate(2%) hue-rotate(89deg) brightness(110%) contrast(100%);
 }
 
 @media (max-width:1440px) {
